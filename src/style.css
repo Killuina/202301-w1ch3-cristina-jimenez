@@ -1,0 +1,112 @@
+@import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  background-color: rgb(64, 138, 64);
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header,
+.bought-items-container {
+  color: white;
+}
+
+.bought-items-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bought-items-container > span {
+  padding: 2rem;
+}
+
+h1 {
+  flex: 1;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul > *,
+a {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+body > div {
+  background-color: rgb(5, 100, 48);
+  padding: 50;
+}
+
+main {
+  padding: 0 10px;
+  background-color: rgb(204, 178, 32);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  border-bottom: 1px solid;
+}
+
+div.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+div.container.items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+div.container.total-price {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(204, 178, 32);
+  flex: 2;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+main > * {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

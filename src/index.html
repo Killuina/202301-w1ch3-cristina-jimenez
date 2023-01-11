@@ -5,11 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Lista de la compra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.jpg">
 </head>
 
 <body>
-
+  <header>
+    <h1>Lista de la compra</h1>
+    <nav>
+      <ul>
+        <li>Principal</li>
+        <li>Lista</li>
+        <li><a href="formulario.html">Añadir artículo</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="bought-items-container">
+    <i class="fa-solid fa-circle-plus"></i>
+    <span>2/3 comprados</span>
+  </div>
+  <main>
+    <div class="main-container">
+      <div class="container items">
+        <label class="bought-item" for="pan"><input type="checkbox" id="pan" value="pan">Pan</label>
+        <label class="pending-item" for="azucar"><input type="checkbox" id="azucar" value="azucar">Azúcar</label>
+        <label class="bought-item" for="leche"><input type="checkbox" id="leche" value="leche">Leche</label>
+        <label class="pending-item" for="tofu"><input type="checkbox" id="tofu" value="tofu">Tofu</label>
+      </div>
+      <div class="container price">
+        <span class="bought-item">0.75€<i class="fa-solid fa-xmark"></i></span>
+        <span class="bought-item">1.20€<i class="fa-solid fa-xmark"></i></span>
+        <span class="bought-item"><i class="fa-solid fa-xmark"></i></span>
+        <span class="pending-item">4.35€<i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </div>
+  </main>
+  <div class="container total-price">
+    <span>6.3€</span>
+  </div>
 </body>
 
 </html>
